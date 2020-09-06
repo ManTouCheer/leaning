@@ -14,7 +14,7 @@ def isOK(positions, index):
             return False
     return True
 n = 8
-positions = [0]*8
+positions = [0]*n
 index = 0
 ok = False
 count = 0
@@ -23,10 +23,10 @@ while True:
     if isOK(positions, index):
         index += 1
     else:
-        if positions[index] < 7:
+        if positions[index] < n-1:
             positions[index] += 1
         else:
-            while positions[index] >= 7:
+            while positions[index] >= n-1:
                 positions[index] = 0
                 index -= 1
             if index >= 0:
@@ -34,10 +34,10 @@ while True:
             else:
                 break
     #print(positions)
-    if index == 8:
+    if index == n:
         print(positions)
         index -= 1
-        while positions[index] >= 7:
+        while positions[index] >= n-1:
             positions[index] = 0
             index -= 1
         if index >= 0:

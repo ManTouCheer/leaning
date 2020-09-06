@@ -1,7 +1,13 @@
-'''
-n = int(input())
-fishs1 = list(map(int, input().split()))
+#n = int(input())
+#fishs1 = list(map(int, input().split()))
+import random
+same = 0
+fishs1 = []
+for i in range(100):
+    fishs1.append(random.randint(1,10000))
 count = 0
+count1 = 0
+
 length = len(fishs1)
 while True:
     index2 = 0
@@ -11,7 +17,7 @@ while True:
         else:
             index2 +=1
             fishs1[index2] = fishs1[i]
-    print(fishs1)
+
     if index2+1 == length:
         break
     count += 1
@@ -36,3 +42,4 @@ for i in range(1, len(nums)):
     else:
         result[i] = nums[i]
 print(max(result))
+'''

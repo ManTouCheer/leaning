@@ -11,6 +11,6 @@
 			maxn = max(maxn, sumSubArr[j]+Arr[i])
 	sumSubArr[i] = maxn
 	
-# pika
+# pika消息队列
 	https://github.com/pika/pika.git
 			 

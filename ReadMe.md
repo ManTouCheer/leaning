@@ -14,3 +14,5 @@
 # pika消息队列
 	https://github.com/pika/pika.git
 			 
+# 目标检测
+https://blog.csdn.net/jorg_zhao/article/details/108229495
